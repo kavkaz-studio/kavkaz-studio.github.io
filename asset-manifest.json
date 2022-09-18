@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/kavkaz-studio/static/css/main.85ccc405.css",
-    "main.js": "/kavkaz-studio/static/js/main.528e090d.js",
+    "main.js": "/kavkaz-studio/static/js/main.13d1441f.js",
     "static/media/home.jpg": "/kavkaz-studio/static/media/home.e57e1cced108db01f82b.jpg",
     "static/media/logo.png": "/kavkaz-studio/static/media/logo.6e9fb4d49ee94630b82b.png",
     "static/media/karen.jpg": "/kavkaz-studio/static/media/karen.ca92426542e0b7692724.jpg",
     "index.html": "/kavkaz-studio/index.html",
     "main.85ccc405.css.map": "/kavkaz-studio/static/css/main.85ccc405.css.map",
-    "main.528e090d.js.map": "/kavkaz-studio/static/js/main.528e090d.js.map"
+    "main.13d1441f.js.map": "/kavkaz-studio/static/js/main.13d1441f.js.map"
   },
   "entrypoints": [
     "static/css/main.85ccc405.css",
-    "static/js/main.528e090d.js"
+    "static/js/main.13d1441f.js"
   ]
 }
