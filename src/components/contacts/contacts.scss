@@ -1,0 +1,114 @@
+@import '../../variables.scss';
+
+.contacts {
+    width: 100%;
+    min-height: calc(100vh - $nav-height);
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    color: #282828;
+    padding: 40px 100px;
+    background-color: #cfbeac;
+
+    .contacts-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: flex-start;
+
+        h2 {
+            font-size: 1.8rem;
+        }
+
+        div {
+            padding: 10px;
+
+            p {
+                font-size: 1.2rem;
+                margin: 10px 0;
+            }
+        }
+
+        a {
+            color: #282828;
+            text-decoration: underline;
+        }
+
+    }
+}
+
+@media (max-width: 900px) {
+    .contacts {
+        padding: 40px 50px;
+    
+        .contacts-container {
+            justify-content: space-around;
+            
+            div {
+
+                h2 {
+                    font-size: 1rem;
+                }
+
+                h3 {
+                    font-size: .9rem;
+                }
+    
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .contacts {
+        padding: 40px 0px;
+    
+        .contacts-container {
+            justify-content: space-around;
+            
+            div {
+                padding: 5px;
+
+                h2 {
+                    font-size: .9rem;
+                }
+
+                h3 {
+                    font-size: .8rem;
+                }
+    
+                p {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 680px) {
+    .contacts {
+        padding: 20px;
+    
+        .contacts-container {
+            flex-direction: column;
+            
+            div {
+
+                h2 {
+                    font-size: 1.2rem;
+                }
+
+                h3 {
+                    font-size: 1.1rem;
+                }
+    
+                p {
+                    font-size: 1.1rem;
+                }
+            }
+        }
+    }
+}

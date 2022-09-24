@@ -1,0 +1,116 @@
+.main {
+    width: 100%;
+    height: 100%;
+
+    &.loading {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgb(40 40 40);
+
+        h1 {
+            color: #cfbeac;
+            opacity: 1;
+            animation-name: loading;
+            animation-duration: .5s;
+        }
+    }
+
+    &.welcome {
+        height: 100vh;
+        animation-name: fadeWrapper;
+        animation-duration: 3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: 0% 30%;
+
+        div {
+            transform: scale(1.8);
+            animation-name: fade;
+            animation-duration: 1s;
+            text-align: center;
+
+            .welcome-logo {
+                width: 300px;
+            }
+
+            h1 {
+                color: #cfbeac;
+            }
+        }
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+    
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.8);
+    }
+}
+
+@keyframes fadeWrapper {
+    0% {
+        background-image: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1));
+    }
+
+    90% {
+        background-image: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1));
+        opacity: 1;
+    }
+
+    95% {
+        background-image: linear-gradient(rgba(40, 40, 40, 1), rgba(40, 40, 40, 1));
+        opacity: .7;
+    }
+
+    100% {
+        background-image: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8));
+        opacity: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    .main {
+        &.welcome {
+            background-size: auto;
+            background-position: center;
+
+            div {
+                .welcome-logo {
+                    width: 50%;
+                }
+
+                h1 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 800px) {
+    .main {
+        &.finish {
+            background-size: 100%;
+            background-position: 0% 30%;
+        }
+    }
+}
