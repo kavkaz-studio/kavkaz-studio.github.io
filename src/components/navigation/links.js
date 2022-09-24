@@ -1,7 +1,7 @@
 export const links = [
     {
         name: "home",
-        to: "/kavkaz-studio",
+        to: "/kavkaz-studio/",
         text: ""
     },
     {
