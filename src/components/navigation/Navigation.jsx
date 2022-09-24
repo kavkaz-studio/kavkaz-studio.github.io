@@ -37,7 +37,7 @@ const Navigation = ({ home }) => {
                             {links.map(({ name, to, text }, i) => {
                                 if (name === "home") {
                                     return <Link key={i} to={to}>
-                                        <img className="home-icon" src={`https://img.icons8.com/material-outlined/30/${location === "/" ? "e6e3d0" : "cfbeac"}/home--v2.svg`} alt="homeIcon" />
+                                        <img className="home-icon" src={`https://img.icons8.com/material-outlined/30/${location === "/kavkaz-studio" ? "e6e3d0" : "cfbeac"}/home--v2.svg`} alt="homeIcon" />
                                     </Link>
                                 }
                                 return <Link key={i} to={to} style={location.replace("/kavkaz-studio/", "") === name ? { color: "#e6e3d0" } : null}>{text}</Link>
@@ -52,7 +52,7 @@ const Navigation = ({ home }) => {
                     {links.map(({ name, to, text }, i) => {
                         if (name === "home") {
                             return <Link key={i} to={to}>
-                                <img className="home-icon" src={`https://img.icons8.com/material-outlined/30/${location === "/" ? "e6e3d0" : "cfbeac"}/home--v2.svg`} alt="homeIcon" />
+                                <img className="home-icon" src={`https://img.icons8.com/material-outlined/30/${location === "/kavkaz-studio" ? "e6e3d0" : "cfbeac"}/home--v2.svg`} alt="homeIcon" />
                             </Link>
                         }
                         return <Link key={i} to={to} style={location.replace("/", "") === name ? { color: "#e6e3d0" } : null}>{text}</Link>
@@ -66,7 +66,7 @@ const Navigation = ({ home }) => {
                         <h2>Вход Админа</h2>
                         <FormInput name="login" label="Логин" value={inputValues.login} onChange={handleChange} />
                         <FormInput name="password" type="password" label="Пароль" value={inputValues.password} onChange={handleChange} />
-                        <Link className="admin-link" to={inputValues.login === home.admin.login && inputValues.password === home.admin.password ? "/admin" : ""}>Вход</Link>
+                        <Link className="admin-link" to={inputValues.login === home.admin.login && inputValues.password === home.admin.password ? "/kavkaz-studio/admin" : ""}>Вход</Link>
                     </div>
                 </ClickAwayListener>
             </div>
