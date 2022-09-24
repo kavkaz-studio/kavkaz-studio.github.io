@@ -50,7 +50,7 @@ const Admin = ({ data }) => {
             <div className="admin-navbar">
                 <ul>
                     {navItems.map((el, i) => <li key={i} onClick={() => setEditPage(el)}>{el}</li>)}
-                    <li><Link to="/kavkaz-studio">Зайти На Сайт</Link></li>
+                    <li><Link to="/">Зайти На Сайт</Link></li>
                 </ul>
             </div>
             <div className="admin-container">

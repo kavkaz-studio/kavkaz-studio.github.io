@@ -55,6 +55,22 @@
                         display: flex;
                         flex-direction: column;
                         justify-content: space-between;
+
+                        div {
+                            p {
+                                width: fit-content;
+                                font-size: 1.1rem;
+                                cursor: pointer;
+    
+                                &:first-child {
+                                    color: rgb(196, 150, 67);
+                                }
+    
+                                &:last-child {
+                                    color: rgb(201, 54, 83);
+                                }
+                            }
+                        }
                     }
                     
                     &:last-child {
@@ -62,11 +78,6 @@
                         border: none;
                     }
 
-                    p:last-child {
-                        color: crimson;
-                        font-size: 1.1rem;
-                        cursor: pointer;
-                    }
                     
                     img {
                         width: 250px;
