@@ -26,10 +26,10 @@ const App = () => {
     const navigate = useNavigate()
     
     useEffect(() => {
-        navigate("/")
-        document.addEventListener("beforeunload", () => {
-            navigate("/")
-        })
+        // navigate("/")
+        // document.addEventListener("beforeunload", () => {
+        //     navigate("/")
+        // })
 
         setLoading(true)
 
@@ -74,7 +74,7 @@ const App = () => {
         </div>
         : state
             ? <div style={divStyle} className="main finish">
-                <Routes basename="/">
+                <Routes>
                     <Route path="/" element={<Navigation home={data.home} />}>
                         <Route index element={<Home home={data.home} />} />
                         <Route path="/about" element={<About about={data.about} />} />

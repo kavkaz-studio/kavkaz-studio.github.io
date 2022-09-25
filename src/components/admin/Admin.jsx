@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 import EditHome from './edit-components/EditHome'
 import EditAbout from './edit-components/EditAbout';
@@ -9,7 +10,6 @@ import EditContacts from './edit-components/EditContacts';
 import EditEvents from './edit-components/EditEvents';
 
 import './admin.scss'
-import { Link } from 'react-router-dom';
 
 const Admin = ({ data }) => {
 

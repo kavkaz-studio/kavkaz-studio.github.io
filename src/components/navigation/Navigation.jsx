@@ -40,7 +40,7 @@ const Navigation = ({ home }) => {
                                         <img className="home-icon" src={`https://img.icons8.com/material-outlined/30/${location === "/" ? "e6e3d0" : "cfbeac"}/home--v2.svg`} alt="homeIcon" />
                                     </Link>
                                 }
-                                return <Link key={i} to={to} style={location.replace("/kavkaz-studio/", "") === name ? { color: "#e6e3d0" } : null}>{text}</Link>
+                                return <Link key={i} to={to} style={location.replace("/", "") === name ? { color: "#e6e3d0" } : null}>{text}</Link>
                             })}
                         </div>
                         <div className="nav-open-button" onClick={() => setToggleNav(true)}>
