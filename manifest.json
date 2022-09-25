@@ -1,6 +1,6 @@
 {
-  "short_name": "Kavkaz Studio",
-  "name": "Kavkaz Studio",
+  "short_name": "React App",
+  "name": "Create React App Sample",
   "icons": [
     {
       "src": "logo.ico",
