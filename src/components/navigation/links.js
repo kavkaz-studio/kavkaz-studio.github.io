@@ -1,37 +1,37 @@
 export const links = [
     {
         name: "home",
-        to: "/kavkaz-studio/",
+        to: "/",
         text: ""
     },
     {
         name: "about",
-        to: "/kavkaz-studio/about",
+        to: "/about",
         text: "О Нас"
     },
     {
         name: "comments",
-        to: "/kavkaz-studio/comments",
+        to: "/comments",
         text: "Отзывы"
     },
     {
         name: "events",
-        to: "/kavkaz-studio/events",
+        to: "/events",
         text: "События"
     },
     {
         name: "courses",
-        to: "/kavkaz-studio/courses",
+        to: "/courses",
         text: "Обучения"
     },
     {
         name: "partners",
-        to: "/kavkaz-studio/partners",
+        to: "/partners",
         text: "Партнёры"
     },
     {
         name: "contacts",
-        to: "/kavkaz-studio/contacts",
+        to: "/contacts",
         text: "Контакты"
     },
 ]
