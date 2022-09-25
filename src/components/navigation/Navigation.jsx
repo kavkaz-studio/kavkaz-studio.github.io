@@ -66,7 +66,7 @@ const Navigation = ({ home }) => {
                         <h2>Вход Админа</h2>
                         <FormInput name="login" label="Логин" value={inputValues.login} onChange={handleChange} />
                         <FormInput name="password" type="password" label="Пароль" value={inputValues.password} onChange={handleChange} />
-                        <Link className="admin-link" to={inputValues.login === home.admin.login && inputValues.password === home.admin.password ? "/kavkaz-studio/admin" : ""}>Вход</Link>
+                        <Link className="admin-link" to={inputValues.login === home.admin.login && inputValues.password === home.admin.password ? "/admin" : ""}>Вход</Link>
                     </div>
                 </ClickAwayListener>
             </div>

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route, useNavigate } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 import { child, get } from "firebase/database"
 
 import { dbRef } from './firebase/firebase'
@@ -23,14 +23,7 @@ const App = () => {
     const [divStyle, setDivStyle] = useState({})
     const [loading, setLoading] = useState(null)
     
-    const navigate = useNavigate()
-    
     useEffect(() => {
-        // navigate("/")
-        // document.addEventListener("beforeunload", () => {
-        //     navigate("/")
-        // })
-
         setLoading(true)
 
         get(child(dbRef, "/")).then((snapshot) => {
