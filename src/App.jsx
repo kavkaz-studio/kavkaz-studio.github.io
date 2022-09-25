@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import { child, get } from "firebase/database"
 
 import { dbRef } from './firebase/firebase'
@@ -22,8 +22,12 @@ const App = () => {
     const [state, setState] = useState(false)
     const [divStyle, setDivStyle] = useState({})
     const [loading, setLoading] = useState(null)
-
+    
+    const navigate = useNavigate()
+    
     useEffect(() => {
+        // navigate("/")
+
         setLoading(true)
 
         get(child(dbRef, "/")).then((snapshot) => {
@@ -67,7 +71,7 @@ const App = () => {
         </div>
         : state
             ? <div style={divStyle} className="main finish">
-                <Routes basename="/kavkaz-studio">
+                <Routes basename="/">
                     <Route path="/" element={<Navigation home={data.home} />}>
                         <Route index element={<Home home={data.home} />} />
                         <Route path="/about" element={<About about={data.about} />} />
