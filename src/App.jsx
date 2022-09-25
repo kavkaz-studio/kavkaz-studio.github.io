@@ -72,7 +72,7 @@ const App = () => {
         : state
             ? <div style={divStyle} className="main finish">
                 <Routes basename="/kavkaz-studio">
-                    <Route path="/kavkaz-studio" element={<Navigation home={data.home} />}>
+                    <Route path="/" element={<Navigation home={data.home} />}>
                         <Route index element={<Home home={data.home} />} />
                         <Route path="/about" element={<About about={data.about} />} />
                         <Route path="/comments" element={<Comments comments={data.comments} />} />
