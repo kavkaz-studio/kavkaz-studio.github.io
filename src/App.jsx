@@ -67,7 +67,7 @@ const App = () => {
         </div>
         : state
             ? <div style={divStyle} className="main finish">
-                <Routes>
+                <Routes basename="/kavkaz-studio">
                     <Route path="/" element={<Navigation home={data.home} />}>
                         <Route index element={<Home home={data.home} />} />
                         <Route path="/about" element={<About about={data.about} />} />
