@@ -26,7 +26,7 @@ const App = () => {
     const navigate = useNavigate()
     
     useEffect(() => {
-        navigate("/kavkaz-studio")
+        navigate("/")
         document.addEventListener("beforeunload", () => {
             navigate("/")
         })
