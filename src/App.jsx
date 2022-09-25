@@ -68,16 +68,16 @@ const App = () => {
         : state
             ? <div style={divStyle} className="main finish">
                 <Routes basename="/kavkaz-studio">
-                    <Route path="/" element={<Navigation home={data.home} />}>
+                    <Route path="/kavkaz-studio" element={<Navigation home={data.home} />}>
                         <Route index element={<Home home={data.home} />} />
-                        <Route path="/about" element={<About about={data.about} />} />
-                        <Route path="/comments" element={<Comments comments={data.comments} />} />
-                        <Route path="/courses" element={<Prices prices={data.courses} />} />
-                        <Route path="/partners" element={<Partners partners={data.partners} />} />
-                        <Route path="/contacts" element={<Contacts contacts={data.contacts} />} />
-                        <Route path="/events" element={<Events events={data.events} />} />
+                        <Route path="/kavkaz-studio/about" element={<About about={data.about} />} />
+                        <Route path="/kavkaz-studio/comments" element={<Comments comments={data.comments} />} />
+                        <Route path="/kavkaz-studio/courses" element={<Prices prices={data.courses} />} />
+                        <Route path="/kavkaz-studio/partners" element={<Partners partners={data.partners} />} />
+                        <Route path="/kavkaz-studio/contacts" element={<Contacts contacts={data.contacts} />} />
+                        <Route path="/kavkaz-studio/events" element={<Events events={data.events} />} />
                     </Route>
-                    <Route path="/admin" element={<Admin data={data} />} />
+                    <Route path="/kavkaz-studio/admin" element={<Admin data={data} />} />
                 </Routes>
             </div>
             : <div className="main welcome">
